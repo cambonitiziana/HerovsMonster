@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroVSMonster", "HeroVSMonster\HeroVSMonster.csproj", "{137D8C4B-7236-49C0-BFCA-824B744E602F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroVSMonster.Core", "HeroVSMonster.Core\HeroVSMonster.Core.csproj", "{0FF2FF8D-322D-4223-86A1-4496C9C60887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.ADORepository", "GameADORepository\Game.ADORepository.csproj", "{1FF95843-FCD1-46A9-862B-C0E5EA377034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameService", "GameService\GameService.csproj", "{B82616C3-3E7F-49D5-9F27-2F33020282AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{137D8C4B-7236-49C0-BFCA-824B744E602F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137D8C4B-7236-49C0-BFCA-824B744E602F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137D8C4B-7236-49C0-BFCA-824B744E602F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137D8C4B-7236-49C0-BFCA-824B744E602F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF2FF8D-322D-4223-86A1-4496C9C60887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF2FF8D-322D-4223-86A1-4496C9C60887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF2FF8D-322D-4223-86A1-4496C9C60887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF2FF8D-322D-4223-86A1-4496C9C60887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF95843-FCD1-46A9-862B-C0E5EA377034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF95843-FCD1-46A9-862B-C0E5EA377034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF95843-FCD1-46A9-862B-C0E5EA377034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF95843-FCD1-46A9-862B-C0E5EA377034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82616C3-3E7F-49D5-9F27-2F33020282AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82616C3-3E7F-49D5-9F27-2F33020282AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82616C3-3E7F-49D5-9F27-2F33020282AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82616C3-3E7F-49D5-9F27-2F33020282AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {148C400D-4C6D-48AA-9511-1F7554B362E3}
+	EndGlobalSection
+EndGlobal

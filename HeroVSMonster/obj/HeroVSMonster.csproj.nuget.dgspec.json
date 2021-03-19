@@ -1,0 +1,255 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster\\HeroVSMonster.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameADORepository\\Game.ADORepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameADORepository\\Game.ADORepository.csproj",
+        "projectName": "Game.ADORepository",
+        "projectPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameADORepository\\Game.ADORepository.csproj",
+        "packagesPath": "C:\\Users\\tiziana.camboni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameADORepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tiziana.camboni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster.Core\\HeroVSMonster.Core.csproj": {
+                "projectPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster.Core\\HeroVSMonster.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameService\\GameService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameService\\GameService.csproj",
+        "projectName": "GameService",
+        "projectPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameService\\GameService.csproj",
+        "packagesPath": "C:\\Users\\tiziana.camboni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tiziana.camboni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster.Core\\HeroVSMonster.Core.csproj": {
+                "projectPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster.Core\\HeroVSMonster.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster.Core\\HeroVSMonster.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster.Core\\HeroVSMonster.Core.csproj",
+        "projectName": "HeroVSMonster.Core",
+        "projectPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster.Core\\HeroVSMonster.Core.csproj",
+        "packagesPath": "C:\\Users\\tiziana.camboni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tiziana.camboni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster\\HeroVSMonster.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster\\HeroVSMonster.csproj",
+        "projectName": "HeroVSMonster",
+        "projectPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster\\HeroVSMonster.csproj",
+        "packagesPath": "C:\\Users\\tiziana.camboni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\HeroVSMonster\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tiziana.camboni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameADORepository\\Game.ADORepository.csproj": {
+                "projectPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameADORepository\\Game.ADORepository.csproj"
+              },
+              "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameService\\GameService.csproj": {
+                "projectPath": "C:\\Users\\tiziana.camboni\\Desktop\\ESERCIZI\\Settimana 8\\HeroVSMonster\\GameService\\GameService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "System.Runtime.Extensions": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

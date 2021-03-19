@@ -1,0 +1,9 @@
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\bin\Debug\netcoreapp3.1\HeroVSMonster.Core.deps.json
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\bin\Debug\netcoreapp3.1\HeroVSMonster.Core.dll
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\bin\Debug\netcoreapp3.1\HeroVSMonster.Core.pdb
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\obj\Debug\netcoreapp3.1\HeroVSMonster.Core.csprojAssemblyReference.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\obj\Debug\netcoreapp3.1\HeroVSMonster.Core.AssemblyInfoInputs.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\obj\Debug\netcoreapp3.1\HeroVSMonster.Core.AssemblyInfo.cs
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\obj\Debug\netcoreapp3.1\HeroVSMonster.Core.csproj.CoreCompileInputs.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\obj\Debug\netcoreapp3.1\HeroVSMonster.Core.dll
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\HeroVSMonster.Core\obj\Debug\netcoreapp3.1\HeroVSMonster.Core.pdb

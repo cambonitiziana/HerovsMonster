@@ -1,0 +1,12 @@
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\bin\Debug\netcoreapp3.1\HeroVSMonster.Core.dll
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\obj\Debug\netcoreapp3.1\Game.ADORepository.csprojAssemblyReference.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\obj\Debug\netcoreapp3.1\Game.ADORepository.AssemblyInfoInputs.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\obj\Debug\netcoreapp3.1\Game.ADORepository.AssemblyInfo.cs
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\bin\Debug\netcoreapp3.1\Game.ADORepository.deps.json
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\bin\Debug\netcoreapp3.1\Game.ADORepository.dll
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\bin\Debug\netcoreapp3.1\Game.ADORepository.pdb
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\bin\Debug\netcoreapp3.1\HeroVSMonster.Core.pdb
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\obj\Debug\netcoreapp3.1\Game.ADORepository.csproj.CoreCompileInputs.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\obj\Debug\netcoreapp3.1\Game.ADORepository.csproj.CopyComplete
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\obj\Debug\netcoreapp3.1\Game.ADORepository.dll
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameADORepository\obj\Debug\netcoreapp3.1\Game.ADORepository.pdb

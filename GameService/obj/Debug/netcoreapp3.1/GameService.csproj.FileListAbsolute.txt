@@ -1,0 +1,12 @@
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\bin\Debug\netcoreapp3.1\GameService.deps.json
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\bin\Debug\netcoreapp3.1\GameService.dll
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\bin\Debug\netcoreapp3.1\GameService.pdb
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\bin\Debug\netcoreapp3.1\HeroVSMonster.Core.dll
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\bin\Debug\netcoreapp3.1\HeroVSMonster.Core.pdb
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\obj\Debug\netcoreapp3.1\GameService.csprojAssemblyReference.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\obj\Debug\netcoreapp3.1\GameService.AssemblyInfoInputs.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\obj\Debug\netcoreapp3.1\GameService.AssemblyInfo.cs
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\obj\Debug\netcoreapp3.1\GameService.csproj.CoreCompileInputs.cache
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\obj\Debug\netcoreapp3.1\GameService.csproj.CopyComplete
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\obj\Debug\netcoreapp3.1\GameService.dll
+C:\Users\tiziana.camboni\Desktop\ESERCIZI\Settimana 8\HeroVSMonster\GameService\obj\Debug\netcoreapp3.1\GameService.pdb
