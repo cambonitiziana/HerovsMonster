@@ -6,6 +6,7 @@ namespace HeroVSMonster.Core.Entities
 {
     public class Player: Entity
     {
+        public bool Admin { get; set; }
 
     }
 }

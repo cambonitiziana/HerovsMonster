@@ -16,7 +16,8 @@ namespace Game.ADORepository.Extension
             return new Player()
             {
                 ID = (int)reader["ID"], //oppure IDictionary= reader.GetInt32(0)
-                name = reader["Nome"].ToString()
+                name = reader["Nome"].ToString(),
+                Admin = (bool)reader["Admin"]
             };
         }
         public static Hero ToHero(this SqlDataReader reader)
@@ -29,10 +30,10 @@ namespace Game.ADORepository.Extension
                 classPerson = reader["Class"].ToString(),
                 lifePoint= (int)reader["LifePoint"],
                 level= (int)reader["Livello"],
-                score=(int)reader["Score"]
+                score=(int)reader["Score"] 
+                
             };
         }
-
         public static Weapon ToWeapon(this SqlDataReader reader)
         {
             //mappa tutte le proprietà di movie quando legge-> 
@@ -43,13 +44,13 @@ namespace Game.ADORepository.Extension
                
             };
         }
+
         public static Monster ToMonster(this SqlDataReader reader)
         {
             //mappa tutte le proprietà di movie quando legge-> 
             return new Monster()
             {
                 level=(int)reader["Livello"],
-                lifePoint = 20,
                 classPerson = reader["Class"].ToString(),
                 weapon = new Weapon
                 {
@@ -68,5 +69,17 @@ namespace Game.ADORepository.Extension
                 score = (int)reader["Score"]
             };
         }
+        public static MatchStatistics ToStatistics(this SqlDataReader reader)
+        {
+            //mappa tutte le proprietà di movie quando legge-> 
+            return new MatchStatistics()
+            {
+                winnings = (int)reader["Winning"],
+                totalMatch = (int)reader["MatchNumbers"],
+                time = ((decimal)reader["MatchTime"])/6000,
+                
+            };
+        }
+
     } 
 } 

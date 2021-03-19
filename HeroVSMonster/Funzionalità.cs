@@ -11,7 +11,9 @@ namespace HeroVSMonster.Funzionalità
 {
     public class Funzionalità
     {
-        public static int MatchPredisposition()
+
+
+        public static (int, Player) MatchPredisposition()
         {
             Console.WriteLine(" BENVENUTO \nHero VS Monster");
 
@@ -19,25 +21,65 @@ namespace HeroVSMonster.Funzionalità
             PlayerService playerService = serviceProvider.GetService<PlayerService>();
             Console.WriteLine("Inserisci nome utente: ");
             string nomePlayer = Console.ReadLine();
-           
+
             List<Player> players = playerService.GetAllPlayer();
-           
-            (bool answer, int id) = PlayerService.IsRegistred(nomePlayer, players); //é registrato? true: si, false: no
+
+            (bool answer, Player p) = PlayerService.IsRegistred(nomePlayer, players); //é registrato? true: si, false: no
             //se è registrato ricavo il suo ID 
 
-            if (answer==false)
+            if (answer == false)
             {
                 //Se non é registrato, lo aggiungo e ricavo il suo ID
                 var NewPlayer = PlayerService.Registration(nomePlayer);
                 var pl = playerService.CreatePlayer(NewPlayer);
-                id = PlayerService.GetPlayerID(players, pl);
+                p.ID = PlayerService.GetPlayerID(players, pl);
                 //id = PlayerService.GetExistingPlayerID(players);
 
             }
-            return id;
+            return (p.ID, p);
         }
+
+        public static string isAdmin(Player p)
+        {
+            string answer;
+            if (p.Admin)
+            {
+                Console.WriteLine("D - Crea mostro\nE - Vedi Statistiche");
+            }
+        inserimento:
+
+            answer = Console.ReadLine();
+            if (answer == "d")
+            {
+                Console.WriteLine("Hai deciso di creare un mostro");
+                CreateMonster();
+                return answer;
+            }
+            else if (answer == "e")
+            {
+                var serviceProvider5 = DIConfiguration.ConfigurazioneStatistics();
+                StatisticsService statisticsService = serviceProvider5.GetService<StatisticsService>();
+                var statistics=statisticsService.GetAll(p);
+                foreach (var s in statistics)
+                {
+                    Console.WriteLine($"Nome Eroe: {s.nameOfHero} - Partite vinte: {s.winnings} - Partite Totali:  {s.totalMatch} Tempo di gioco totale[m]:{s.time} ");
+                }
+            }
+            else if (answer == "a" || answer == "b" || answer == "c")
+            {
+                return answer;
+            }
+            else
+            {
+                Console.WriteLine("inserimento non valido");
+                goto inserimento;
+            }
+
+                return answer;
+        }
+
         public static Hero GetHeroByPlayerID(int id)
-        { 
+        {
             var serviceProvider2 = DIConfiguration.ConfigurazioneHero();
             HeroService heroService = serviceProvider2.GetService<HeroService>();
 
@@ -79,8 +121,8 @@ namespace HeroVSMonster.Funzionalità
             var serviceProvider3 = DIConfiguration.ConfigurazioneWeapon();
             WeaponService weaponService = serviceProvider3.GetService<WeaponService>();
             Console.WriteLine("Le armi a tua disposizione sono:");
-           
-            weapon:
+
+        weapon:
             //List<Weapon> weapons = new List<Weapon>;
             var weapons = weaponService.GetAllWeapons(fightingHero);
             for (int i = 0; i < weapons.Count(); i++)
@@ -101,22 +143,65 @@ namespace HeroVSMonster.Funzionalità
                 Console.WriteLine("Inserimento non valido");
                 goto weapon;
             }
-  
+
         }
         public static Monster GetMonster(Hero fightingHero)
-        { 
-           
+        {
+
             var serviceProvider4 = DIConfiguration.ConfigurazioneMonster();
             MonsterService MonsterService = serviceProvider4.GetService<MonsterService>();
 
-            var monster = MonsterService.GetAllMonster(fightingHero);
+            var monster = MonsterService.GetAllMonster(fightingHero); //mi rende i mostri con livello uguale o mini
             var random = new Random();
+
+
+            var serviceProvider3 = DIConfiguration.ConfigurazioneLevel();
+            LevelService levelService = serviceProvider3.GetService<LevelService>();
+
+            var Levels = levelService.GetLivelliInfo();
             int index = random.Next(monster.Count);
             Monster fightingMonster = monster[index];
+
+            for (int i = 0; i < Levels.Count; i++)
+            {
+                if (Levels[i].livello == fightingMonster.level)
+                {
+                    fightingMonster.lifePoint = Levels[i].lifePoint;
+                }
+            }
+
             Console.WriteLine("Stai sfidando {0} la cui arma è  {1}", fightingMonster.classPerson, fightingMonster.weapon.name);
-            
+
             return (fightingMonster);
         }
+        public static void CreateMonster()
+        {
+            var serviceProvider4 = DIConfiguration.ConfigurazioneMonster();
+            MonsterService MonsterService = serviceProvider4.GetService<MonsterService>();
+
+            Console.WriteLine("Categoria del mostro: ");
+            string c = Console.ReadLine();
+
+            Console.WriteLine("Livello: ");
+            int l = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Arma: ");
+            string weaponName = Console.ReadLine();
+            Console.WriteLine("Punti danno dell'arma MUOOOSTROSA: ");
+            int damagePoint = Convert.ToInt32(Console.ReadLine());
+
+            Monster m = new Monster()
+            {
+                classPerson = c,
+                level = l,
+                weapon = new Weapon
+                {
+                    name = weaponName,
+                    damagePoint = damagePoint
+                }
+
+            };
+            MonsterService.CreateMonster(m);
+                }
         #region Match
         public static (Monster,Hero,bool) HeroChoice(Monster m, Hero h)
         {
@@ -178,6 +263,12 @@ namespace HeroVSMonster.Funzionalità
         }
         public static Hero Match(Hero h)
         {
+            //if (h.Statistcs.totalMatch == null)
+            //{
+            //    h.Statistcs.totalMatch = 0;
+            //}
+            h.Statistcs.winnings ++;
+            var startTime = DateTime.Now;
             Monster m = Funzionalità.GetMonster(h);
             do
             {
@@ -206,16 +297,28 @@ namespace HeroVSMonster.Funzionalità
                     h = checkTheWinner(m, h);
                 }
             } while (h.lifePoint > 0 && m.lifePoint > 0);
-
+            var stopTime = DateTime.Now;
+            var interval = startTime - stopTime;
+            //if (h.Statistcs.time == null)
+            //{
+            //    h.Statistcs.time = 0;
+            //}
+            h.Statistcs.time+=Convert.ToDecimal(interval.TotalMilliseconds);
             Console.WriteLine("Partita finita!");
             return h;
         }
+
         public static Hero checkTheWinner(Monster m, Hero h)
         {
             if (m.lifePoint == 0)
             {
                 Console.WriteLine("Ha vinto il {0} {1}", h.classPerson, h.name);
                 h.score = h.score + (10 * m.level);
+                if (h.Statistcs.winnings == null)
+                { 
+                    h.Statistcs.winnings = 0;
+                }
+                h.Statistcs.winnings ++;
             }
             else if (h.lifePoint == 0)
             {

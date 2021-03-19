@@ -46,19 +46,20 @@ namespace GameService
             p.name = n;
             return p;
         }
-        public static (bool,int) IsRegistred(string player, List<Player> players)
+        public static (bool,Player) IsRegistred(string playerName, List<Player> players)
         {
+            Player player = new Player();
             bool isRegistred = false;
-            int id=0;
+            int id = 0;
             foreach (var p in players)
             {
-                if (p.name == player)
+                if (p.name == playerName)
                 {
-                    id = p.ID;
+                    player = p;
                     isRegistred = true;
                 }
             }
-            return (isRegistred, id);
+            return (isRegistred, player);
         }
 
         //{    

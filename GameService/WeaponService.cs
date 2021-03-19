@@ -2,6 +2,7 @@
 using HeroVSMonster.Core.Interface;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace GameService
@@ -18,5 +19,7 @@ namespace GameService
         {
             return _repo.GetAll(h);
         }
+       
+
     }
 }

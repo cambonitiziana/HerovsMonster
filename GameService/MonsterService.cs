@@ -19,6 +19,17 @@ namespace GameService
             return _repo.GetAll(h);
         }
 
+        public Monster CreateMonster(Monster m)
+        {
+            if (m != null)
+            {
+                _repo.Create(m);
+                return m;
+            }
+            else
+                return null;
+        }
+
 
     }
 }

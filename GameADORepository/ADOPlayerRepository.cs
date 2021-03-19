@@ -28,7 +28,7 @@ namespace GameADORepository
                 SqlCommand insertCommand = new SqlCommand();
                 insertCommand.Connection = connection;
                 insertCommand.CommandType = System.Data.CommandType.Text;
-                insertCommand.CommandText = "INSERT INTO Player VALUES (@Nome)";
+                insertCommand.CommandText = "INSERT INTO Player VALUES (@Nome, 0)";
 
                 insertCommand.Parameters.AddWithValue("@Nome", Nome);
                

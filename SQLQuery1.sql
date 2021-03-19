@@ -7,6 +7,7 @@
 --CREATE TABLE Player (
 --ID INT NOT NULL PRIMARY KEY,
 --Nome VARCHAR(255),
+--Admin BIT NOT NULL,
 --)
 
 
@@ -49,17 +50,42 @@
 --)
 
 --INSERT INTO RoleClasses VALUES 
---('Eroe','Guerriero',1, 'Scettro Infuocato', 4),
---('Eroe','Mago',1, 'Bacchetta lunare', 3),
---('Eroe','Mago',1, 'Bacchetta Solare', 3),
---('Eroe','Mago',1, 'Occhio bianco', 3),
---('Eroe','Mago',2, 'Pietra Magica', 4),
+--('Eroe','Guerriero',1, 'Bastone Infuocato', 10),
+--('Eroe','Guerriero',1, 'Giavelotto Infuocato', 7),
+--('Eroe','Mago',1, 'Bacchetta lunare', 9),
+--('Eroe','Mago',1, 'Bacchetta Solare', 7),
+--('Eroe','Guerriero',2, 'Lancia Infuocato', 7),
+--('Eroe','Guerriero',2, 'Piede puzzone', 7),
+--('Eroe','Mago',3, 'Cruciatus', 8),
+--('Eroe','Mago',3, 'Cappello oracolo', 7),
+--('Eroe','Guerriero',3, 'Scettro Infuocato', 7),
+--('Eroe','Guerriero',3, 'Piede Infuocato', 7),
+--('Eroe','Mago',4, 'Freccia nel cuore', 8),
+--('Eroe','Mago',4, 'Cerbottanavelenosa', 7),
+--('Eroe','Guerriero',4, 'Scettro Infuocato', 7),
+--('Eroe','Guerriero',4, 'Scettro d acqua', 7),
+--('Eroe','Mago',5, 'Imperius', 8),
+--('Eroe','Mago',5, 'Maldizione Mortale', 7),
+--('Eroe','Guerriero',5, 'Scettro Infuocato', 7),
+--('Eroe','Guerriero',5, 'Scettro di Marte', 7),
 --('Mostro','Cultista',1, 'Anello Diabolico', 2),
 --('Mostro','Cultista',2, 'Diamande luminoso', 2),
 --('Mostro', 'Orco',1, 'Denti Affamati', 3),
 --('Mostro', 'Orco',2, 'Lancia infuocata', 3),
---('Mostro','Signore Del Male',2, 'Scettro Diabolico', 4),
---('Mostro','Signore Del Male',3, 'Occhio che tutto vede', 5)
+--('Mostro','Signore Del Male',1, 'Scettro Diabolico', 4),
+--('Mostro','Signore Del Male',2, 'Occhio che tutto vede', 5),
+--('Mostro','Cultista',1, 'Anello Diabolico', 2),
+--('Mostro','Cultista',2, 'Diamande luminoso', 2),
+--('Mostro', 'Orco',3, 'Denti Affamati', 3),
+--('Mostro', 'Orco',4, 'Lancia infuocata', 3),
+--('Mostro','Signore Del Male',3, 'Scettro Diabolico', 4),
+--('Mostro','Signore Del Male',4, 'Occhio che tutto vede', 5),
+--('Mostro','Cultista',3, 'Anello Diabolico', 2),
+--('Mostro','Cultista',4, 'Diamande luminoso', 2),
+--('Mostro', 'Orco',1, 'Denti Affamati', 3),
+--('Mostro', 'Orco',2, 'Lancia infuocata', 3),
+--('Mostro','Signore Del Male',3, 'Scettro Diabolico', 4),
+--('Mostro','Signore Del Male',4, 'Occhio che tutto vede', 5)
 
 ----ALTER TABLE RoleClasses DROP COLUMN Livello
 
@@ -89,4 +115,7 @@ SELECT * FROM LevelLifePointScore
 
 --Delete FROM RoleClasses WHere ID = 12 
 
-                          
+UPDATE Player
+SET Admin = 0 WHERE ID =10
+
+--ALTER TABLE Player ADD Admin bit

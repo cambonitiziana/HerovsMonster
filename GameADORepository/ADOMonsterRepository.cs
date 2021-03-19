@@ -3,6 +3,7 @@ using HeroVSMonster.Core.Entities;
 using HeroVSMonster.Core.Interface;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 
@@ -13,9 +14,53 @@ namespace Game.ADORepository
 
         const string connectionString = @"Persist Security Info= false; Integrated Security = true; Initial Catalog = Game; Server = .\SQLEXPRESS";
 
-        public void Create(Monster obj)
+        public void Create(Monster m)
         {
-            throw new NotImplementedException();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+
+                SqlCommand selectCommand = new SqlCommand();
+                selectCommand.Connection = connection;
+                selectCommand.CommandType = System.Data.CommandType.Text;
+                selectCommand.CommandText = "SELECT * FROM RoleClasses";
+
+                SqlCommand insertCommand = new SqlCommand();
+                insertCommand.Connection = connection;
+                insertCommand.CommandType = System.Data.CommandType.Text;
+                insertCommand.CommandText = "INSERT INTO RoleClasses VALUES ('Mostro', @Class, @livello, @weaponName, @damagePoint)";
+
+                insertCommand.Parameters.AddWithValue("@Class",m.classPerson );
+                insertCommand.Parameters.AddWithValue("@livello", m.level);
+                insertCommand.Parameters.AddWithValue("@weaponName", m.weapon.name);
+                insertCommand.Parameters.AddWithValue("@damagePoint", m.weapon.damagePoint);
+
+                adapter.SelectCommand = selectCommand;
+                adapter.InsertCommand = insertCommand;
+
+
+                DataSet dataset = new DataSet();
+                try
+                {
+                    connection.Open();
+                    adapter.Fill(dataset, "RoleClasses");
+
+                    DataRow monster = dataset.Tables["RoleClasses"].NewRow();
+                    dataset.Tables["RoleClasses"].Rows.Add(monster);
+                    adapter.Update(dataset, "RoleClasses");
+                }
+                catch (Exception e)
+                {
+
+                    Console.WriteLine(e.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
         }
 
         public bool Delete(Monster obj)

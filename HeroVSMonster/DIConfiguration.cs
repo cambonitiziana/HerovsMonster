@@ -54,22 +54,28 @@ namespace HeroVSMonster
         {
             return new ServiceCollection()
 
-
                     .AddScoped<MonsterService>()
 
-                    .AddScoped<IMonsterRepository, ADOMonsterRepository>() //servizio che mappa l'astrazione con l'implementazione
+                    .AddScoped<IMonsterRepository, ADOMonsterRepository>() 
                     .BuildServiceProvider();
-
         }
-
         public static ServiceProvider ConfigurazioneLevel() //classe appena scaricata
         {
             return new ServiceCollection()
 
-
                     .AddScoped<LevelService>()
 
-                    .AddScoped<ILevelRepository, ADOLevelRepository>() //servizio che mappa l'astrazione con l'implementazione
+                    .AddScoped<ILevelRepository, ADOLevelRepository>()
+                    .BuildServiceProvider();
+        }
+        public static ServiceProvider ConfigurazioneStatistics() //classe appena scaricata
+        {
+            return new ServiceCollection()
+
+
+                    .AddScoped<StatisticsService>()
+
+                    .AddScoped<IStatisticsRepository, ADOStatisticsRepository>() //servizio che mappa l'astrazione con l'implementazione
                     .BuildServiceProvider();
 
         }

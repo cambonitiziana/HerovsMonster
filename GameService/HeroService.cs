@@ -38,10 +38,9 @@ namespace GameService
             else if  (herosList.Count >= 1)
             {
                 Console.WriteLine("I tuoi eroi sono: ");
-                Console.WriteLine($" Nome\t - Classe\t - Livello\t - Punti Vita");
                 foreach (var h in herosList)
                 {
-                    Console.WriteLine($"{h.name}\t - {h.classPerson}\t - {h.level}\t - {h.lifePoint}");
+                    Console.WriteLine($"Nome: {h.name}\t - Classe: {h.classPerson}\t - Livello: {h.level}\t - Punti Vita:{h.lifePoint}");
                 }
                 Console.WriteLine("Vuoi utilizzare un eroe già create?");
                 var answer = Funz.CheckAnswer();
@@ -88,7 +87,15 @@ namespace GameService
             NewHero.level = 1;
             NewHero.lifePoint = 20;
             NewHero.score = 0;
+            NewHero.Statistcs = new MatchStatistics()
+            {
+                nameOfHero = NewHero.name,
+                winnings = 0,
+                totalMatch = 0,
+                time = 0
 
+            };
+                
             return NewHero;
         }
         public bool DeleteHero(Hero h)
